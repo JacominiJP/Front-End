@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Chango&family=Sekuya&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.catalog {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, minmax(250px, 350px));
+  gap: 20px;
+  background-image:
+    linear-gradient(to bottom, rgb(54, 53, 53), rgba(168, 164, 164, 0.486)),
+    url(../imagens/bannercatalog.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding-bottom: 30px;
+}
+
+.product {
+  border: 5px solid rgba(255, 121, 208, 1);
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  background-color: rgba(255, 239, 247, 1);
+  margin-top: 25px;
+  transition: transform 0.4s ease;
+}
+
+.product:hover {
+  transform: scale(1.02);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.1px;
+  background-color: rgba(168, 164, 164, 0.486);
+}
+
+nav {
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgb(255, 200, 252);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  margin-right: 20px;
+}
+
+.banner {
+  background-image: url("../imagens/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-position-y: -180px;
+  background-attachment: fixed;
+}
+
+ul {
+  display: flex;
+  gap: 24px;
+}
+
+li {
+  list-style: none;
+  font-size: 15px;
+  display: inline-block;
+  color: pink;
+  font-family: "Archivo Black", sans-serif;
+}
+
+.product-link {
+  text-decoration: none;
+  color: black;
+}
+
+.navegation {
+  text-decoration: none;
+  color: rgb(233, 57, 86);
+}
+
+.product-image {
+  width: 300px;
+  border-radius: 20px;
+  margin-top: 40px;
+  box-shadow: 8px 8px 10px rgba(209, 153, 204, 0.3);
+  border: 2px solid rgba(125, 117, 227, 1);
+}
+
+.image-title {
+  height: 300px;
+}
+
+h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  font-family: "Sekuya", sans-serif;
+}
+
+.price {
+  display: inline-block;
+  border: 2px solid rgba(227, 108, 185, 1);
+  padding: 8px;
+  border-radius: 20px;
+  background-color: rgba(255, 139, 214, 1);
+  color: rgb(143, 236, 36);
+  letter-spacing: 3px;
+  box-shadow: 6px 6px 10px rgba(190, 131, 186, 0.459);
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+  -webkit-text-stroke-width: 0.5px;
+  transition: transform 0.3s ease;
+}
+
+.price:hover {
+  transform: scale(1.2);
+}
+
+.name-product {
+  font-family: "Chango", cursive;
+  letter-spacing: 1px;
+  font-size: 18px;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  font-size: 19px;
+  border: 2px solid rgba(125, 117, 227, 1);
+  padding: 10px;
+  margin-inline: 30px;
+  border-radius: 20px;
+  background-color: rgba(140, 131, 255, 1);
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 0.4px;
+}
+
+.welcome {
+  font-family: "Chango", cursive;
+  text-align: center;
+  background-image: linear-gradient(
+    to top,
+    rgb(54, 53, 53),
+    rgba(168, 164, 164, 0.486)
+  );
+}
+
+.uma {
+  background-image: linear-gradient(
+    to top,
+    rgb(189, 157, 13),
+    rgb(255, 217, 0)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 5px;
+  color: rgb(255, 255, 255);
+}
+
+p {
+  font-size: 15px;
+  color: white;
+}
+
+.musume {
+  background-image: linear-gradient(
+    to top,
+    rgb(240, 125, 144),
+    rgb(253, 195, 204)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.organizada {
+  background-image: linear-gradient(to top, rgb(255, 0, 0), rgb(250, 131, 131));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Modais */
+
+.modal-image {
+  width: 30vh;
+  border: 2px solid rgba(125, 117, 227, 1);
+  border-radius: 20px;
+  box-shadow: 8px 8px 10px rgba(209, 153, 204, 0.3);
+}
+
+.fechar {
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid rgb(255, 0, 0);
+  padding: 5px;
+  border-radius: 20px;
+  background-color: rgb(255, 0, 0);
+  color: whitesmoke;
+  transition: transform 0.3s ease;
+  margin-top: 10px;
+}
+
+.fechar:hover {
+  transform: scale(1.1);
+}
+
+.comprar {
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid rgb(33, 161, 7);
+  padding: 5px;
+  border-radius: 20px;
+  background-color: rgb(72, 160, 1);
+  color: whitesmoke;
+  transition: transform 0.3s ease;
+  margin-top: 10px;
+}
+
+.comprar:hover {
+  transform: scale(1.1);
+}
+
+.modal {
+  display: none;
+  margin-top: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-family: "Chango", cursive;
+  width: 100%;
+  height: 100%;
+}
+
+#prod1:target,
+#prod2:target,
+#prod3:target,
+#prod4:target,
+#prod5:target,
+#prod6:target,
+#prod7:target,
+#prod8:target,
+#prod9:target,
+#prod10:target {
+  display: block;
+}
+
+.modal-content {
+  border: 3px solid rgba(255, 121, 208, 1);
+  background-color: rgba(175, 130, 152, 0.877);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  max-width: 600px;
+  margin: 40px auto;
+  animation: aparecimento 0.5s ease;
+}
+
+@keyframes aparecimento {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1194px) {
+  ul {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    gap: 10px;
+  }
+
+  .catalog {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(300px, 400px));
+    gap: 20px;
+    padding-inline: 15px;
+  }
+}
+
+@media screen and (max-width: 816px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .banner {
+    background-image: url("../imagens/bannercelular.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-position-y: -180px;
+    background-attachment: fixed;
+  }
+
+  .image-title {
+    max-height: 260px;
+  }
+
+  ul {
+    display: grid;
+    grid-template-columns: repeat(2, 110px);
+    gap: 10px;
+  }
+
+  li {
+    font-size: 15px;
+  }
+
+  nav {
+    margin-bottom: 40px;
+  }
+
+  .catalog {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(1, minmax(300px, 450px));
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .image-title {
+    max-height: 168px;
+  }
+
+  .product-image {
+    width: 200px;
+  }
+
+  .catalog {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(1, minmax(100px, 280px));
+    gap: 20px;
+  }
+
+  nav {
+    margin-right: 0px;
+  }
+}
