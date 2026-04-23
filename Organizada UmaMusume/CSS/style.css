@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+/*Formatação do Catalogo*/
 .catalog {
   display: grid;
   justify-content: center;
@@ -19,6 +20,7 @@
   padding-bottom: 30px;
 }
 
+/*Decoração da Borda do Produto + Animação*/
 .product {
   border: 5px solid rgba(255, 121, 208, 1);
   border-radius: 20px;
@@ -34,6 +36,7 @@
   transform: scale(1.02);
 }
 
+/*Título + Cabeçalho(Boas Vindas) da página*/
 header {
   display: flex;
   justify-content: space-between;
@@ -42,96 +45,12 @@ header {
   background-color: rgba(168, 164, 164, 0.486);
 }
 
-nav {
-  border: 3px solid rgb(255, 255, 255);
-  border-radius: 10px;
-  padding: 20px;
-  background-color: rgb(255, 200, 252);
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
-  margin-right: 20px;
-}
-
 .banner {
   background-image: url("../imagens/banner.jpg");
   background-size: cover;
   background-position: center;
   background-position-y: -180px;
   background-attachment: fixed;
-}
-
-ul {
-  display: flex;
-  gap: 24px;
-}
-
-li {
-  list-style: none;
-  font-size: 15px;
-  display: inline-block;
-  color: pink;
-  font-family: "Archivo Black", sans-serif;
-}
-
-.product-link {
-  text-decoration: none;
-  color: black;
-}
-
-.navegation {
-  text-decoration: none;
-  color: rgb(233, 57, 86);
-}
-
-.product-image {
-  width: 300px;
-  border-radius: 20px;
-  margin-top: 40px;
-  box-shadow: 8px 8px 10px rgba(209, 153, 204, 0.3);
-  border: 2px solid rgba(125, 117, 227, 1);
-}
-
-.image-title {
-  height: 300px;
-}
-
-h3 {
-  font-size: 20px;
-  margin: 10px 0;
-  font-family: "Sekuya", sans-serif;
-}
-
-.price {
-  display: inline-block;
-  border: 2px solid rgba(227, 108, 185, 1);
-  padding: 8px;
-  border-radius: 20px;
-  background-color: rgba(255, 139, 214, 1);
-  color: rgb(143, 236, 36);
-  letter-spacing: 3px;
-  box-shadow: 6px 6px 10px rgba(190, 131, 186, 0.459);
-  -webkit-text-stroke-color: rgb(255, 255, 255);
-  -webkit-text-stroke-width: 0.5px;
-  transition: transform 0.3s ease;
-}
-
-.price:hover {
-  transform: scale(1.2);
-}
-
-.name-product {
-  font-family: "Chango", cursive;
-  letter-spacing: 1px;
-  font-size: 18px;
-  display: inline-block;
-  color: rgb(255, 255, 255);
-  font-size: 19px;
-  border: 2px solid rgba(125, 117, 227, 1);
-  padding: 10px;
-  margin-inline: 30px;
-  border-radius: 20px;
-  background-color: rgba(140, 131, 255, 1);
-  -webkit-text-stroke-color: black;
-  -webkit-text-stroke-width: 0.4px;
 }
 
 .welcome {
@@ -187,6 +106,101 @@ p {
   color: transparent;
 }
 
+/*Navegação do Site*/
+nav {
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgb(255, 200, 252);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  margin-right: 20px;
+}
+
+ul {
+  display: flex;
+  gap: 24px;
+}
+
+li {
+  list-style: none;
+  font-size: 15px;
+  display: inline-block;
+  color: pink;
+  font-family: "Archivo Black", sans-serif;
+}
+
+/*Navegação do Site(Animação da Navegação)*/
+.navegation {
+  text-decoration: none;
+  color: rgb(233, 57, 86);
+  transition: color 0.5s ease;
+}
+
+.navegation:hover {
+  color: rgb(174, 45, 185);
+}
+
+/*Decoração Interna dos Cards dos Produtos*/
+.product-link {
+  text-decoration: none;
+  color: black;
+}
+
+.product-image {
+  width: 300px;
+  border-radius: 20px;
+  margin-top: 40px;
+  box-shadow: 8px 8px 10px rgba(209, 153, 204, 0.3);
+  border: 2px solid rgba(125, 117, 227, 1);
+}
+
+.image-title {
+  height: 300px;
+}
+
+/*tag em que a class "name-product" está nomeada*/
+h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  font-family: "Sekuya", sans-serif;
+}
+
+.price {
+  display: inline-block;
+  border: 2px solid rgba(227, 108, 185, 1);
+  padding: 8px;
+  border-radius: 20px;
+  background-color: rgba(255, 139, 214, 1);
+  color: rgb(143, 236, 36);
+  letter-spacing: 3px;
+  box-shadow: 6px 6px 10px rgba(190, 131, 186, 0.459);
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+  -webkit-text-stroke-width: 0.5px;
+  transition: transform 0.3s ease;
+}
+
+.price:hover {
+  transform: scale(1.2);
+}
+
+.name-product {
+  font-family: "Chango", cursive;
+  letter-spacing: 1px;
+  font-size: 18px;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  font-size: 19px;
+  border: 2px solid rgba(125, 117, 227, 1);
+  padding: 10px;
+  margin-inline: 30px;
+  border-radius: 20px;
+  background-color: rgba(140, 131, 255, 1);
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 0.4px;
+}
+
+
+
 /* Modais */
 
 .modal-image {
@@ -196,6 +210,7 @@ p {
   box-shadow: 8px 8px 10px rgba(209, 153, 204, 0.3);
 }
 
+/*Botão de Fechar e Comprar + Animação*/
 .fechar {
   text-decoration: none;
   display: inline-block;
@@ -228,6 +243,9 @@ p {
   transform: scale(1.1);
 }
 
+/*Funcionamento de Todo Modal*/
+
+/*Posicionamento do Modal e Desligamento dele*/
 .modal {
   display: none;
   margin-top: 30px;
@@ -239,6 +257,7 @@ p {
   height: 100%;
 }
 
+/*Fazendo Ele Aparecer ao clicar*/
 #prod1:target,
 #prod2:target,
 #prod3:target,
@@ -252,6 +271,7 @@ p {
   display: block;
 }
 
+/*Decoração*/
 .modal-content {
   border: 3px solid rgba(255, 121, 208, 1);
   background-color: rgba(175, 130, 152, 0.877);
